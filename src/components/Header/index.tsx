@@ -1,11 +1,12 @@
 import BrandLogo from '../BrandLogo';
+import PrimaryCTA from '../PrimaryCTA';
 
 export default function Header() {
     const HEADERS = ['About', 'Experience', 'Projects', 'Contact'];
     return (
-        <header className="flex flex-row w-full h-[100px] items-center justify-between px-[50px]">
+        <header className="absolute top-0 left-0 flex flex-row w-full h-[100px] items-center justify-between px-[50px]">
             <BrandLogo />
-            <nav className="flex space-x-6">
+            <nav className="flex flex-row items-center space-x-6">
                 {HEADERS.map((header, idx) => {
                     return (
                         <div key={header} className="text-[13px] cursor-pointer">
@@ -14,6 +15,7 @@ export default function Header() {
                         </div>
                     );
                 })}
+                <PrimaryCTA />
             </nav>
         </header>
     );
