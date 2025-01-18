@@ -5,12 +5,22 @@
 :root {
     --background: #ffffff;
     --foreground: #171717;
+    --primary: #64ffda;
+    --secondary: #a8b2d1;
+    --medium: #8892b0;
+    --bold-text: #ccd6f6;
+    --primary-bg: #0b192e;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #0b192e;
         --foreground: #ededed;
+        --primary: #64ffda;
+        --secondary: #a8b2d1;
+        --medium: #8892b0;
+        --bold-text: #ccd6f6;
+        --primary-bg: #0b192e;
     }
 }
 

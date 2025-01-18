@@ -9,8 +9,8 @@ type PrimaryCTAProps = {
 
 export default function PrimaryCTA({
     text = 'Resume',
-    bgStyle = 'w-[88px] h-[40px] bg-[#64FFDA] rounded-lg',
-    btnStyle = 'flex flex-row items-center justify-center text-[13px] text-[#64FFDA] bg-[#0B192D] border-[#64FFDA] border-[1px] rounded-lg',
+    bgStyle = 'w-[88px] h-[40px] bg-primary rounded-lg',
+    btnStyle = 'flex flex-row items-center justify-center text-[13px] text-primary bg-primarybg border-primary border-[1px] rounded-lg',
 }: PrimaryCTAProps) {
     const [isClicked, setIsClicked] = useState(false);
 

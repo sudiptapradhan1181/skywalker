@@ -23,7 +23,7 @@ function HoverIcon({ url, alt, hoverUrl, redirectUrl }: SocialMediaIcon) {
 export default function FixedInfo({ icons = [] }: FixedInfoProps) {
     return (
         <section className="flex flex-row items-center gap-10">
-            <div className="flex flex-row items-center gap-10 w-[150px] text-[12px] text-[#A8B2D1]">
+            <div className="flex flex-row items-center gap-10 w-[150px] text-[12px] text-secondary">
                 {icons?.length > 0 ? (
                     icons?.map((icon: SocialMediaIcon) => {
                         return (
@@ -39,13 +39,13 @@ export default function FixedInfo({ icons = [] }: FixedInfoProps) {
                 ) : (
                     <a
                         href="mailto:spp11@iitbbs.ac.in"
-                        className="cursor-pointer hover:translate-x-[-2px] hover:text-[#64FFDA] transition-transform duration-200"
+                        className="cursor-pointer hover:translate-x-[-2px] hover:text-primary transition-transform duration-200"
                     >
                         spp11@iitbbs.ac.in
                     </a>
                 )}
             </div>
-            <div className="w-[90px] h-[1px] bg-[#A8B2D1]" />
+            <div className="w-[90px] h-[1px] bg-secondary" />
         </section>
     );
 }
