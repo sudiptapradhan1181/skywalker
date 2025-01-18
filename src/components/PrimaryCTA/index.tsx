@@ -5,10 +5,12 @@ type PrimaryCTAProps = {
     text?: string;
     btnStyle?: string;
     bgStyle?: string;
+    onClick?: () => void;
 };
 
 export default function PrimaryCTA({
     text = 'Resume',
+    onClick = () => {},
     bgStyle = 'w-[88px] h-[40px] bg-primary rounded-lg',
     btnStyle = 'flex flex-row items-center justify-center text-[13px] text-primary bg-primarybg border-primary border-[1px] rounded-lg',
 }: PrimaryCTAProps) {
@@ -19,6 +21,9 @@ export default function PrimaryCTA({
         setTimeout(() => {
             setIsClicked(false);
         }, 500);
+        if (onClick) {
+            onClick();
+        }
     };
     return (
         <button className={`relative ${bgStyle}`}>

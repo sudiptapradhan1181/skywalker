@@ -22,3 +22,5 @@ export const SOCIAL_ICONS: SocialMediaIcon[] = [
 ];
 
 export const HEADER_TABS = ['About', 'Experience', 'Projects', 'Contact'];
+
+export const RESUME_LINK = 'https://drive.google.com/file/d/1cTf4OmDI29KHR7SMsM8gjGhTnYJWeJJK/view?usp=sharing';

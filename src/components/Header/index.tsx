@@ -1,8 +1,12 @@
-import { HEADER_TABS } from '@/constants';
+'use client';
+import { HEADER_TABS, RESUME_LINK } from '@/constants';
 import BrandLogo from '../BrandLogo';
 import PrimaryCTA from '../PrimaryCTA';
 
 export default function Header() {
+    const handleCTAClick = () => {
+        window.open(RESUME_LINK, '_blank');
+    };
     return (
         <header className="absolute top-0 left-0 flex flex-row w-full h-[100px] items-center justify-between px-[50px]">
             <BrandLogo />
@@ -15,7 +19,7 @@ export default function Header() {
                         </div>
                     );
                 })}
-                <PrimaryCTA />
+                <PrimaryCTA onClick={handleCTAClick} />
             </nav>
         </header>
     );
