@@ -1,4 +1,3 @@
-import { AnimatedLink } from '@/components/AnimatedLink';
 import FirstFold from '@/components/FirstFold';
 import FixedInfo from '@/components/FixedInfo';
 import Header from '@/components/Header';
