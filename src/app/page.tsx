@@ -3,10 +3,8 @@ import FirstFold from '@/components/FirstFold';
 import FixedInfo from '@/components/FixedInfo';
 import Header from '@/components/Header';
 import { SOCIAL_ICONS } from '@/constants';
-import { useIsDesktop } from '@/hooks/useIsDesktop';
 
 export default function Home() {
-  const isDesktop = useIsDesktop();
   return (
     <div className="relative font-[family-name:var(--font-fira-code)]">
       <Header />
