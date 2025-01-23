@@ -1,13 +1,15 @@
 import { HEADER_TABS, RESUME_LINK } from '@/constants';
 import { motion } from 'framer-motion';
 import PrimaryCTA from '../PrimaryCTA';
+import { RefObject } from 'react';
 
 type DrawerProps = {
   isOpen: boolean;
   toggleDrawer: () => void;
+  ref: RefObject<HTMLDivElement | null>;
 };
 
-const Drawer = ({ isOpen, toggleDrawer }: DrawerProps) => {
+const Drawer = ({ isOpen, toggleDrawer, ref }: DrawerProps) => {
   const handleCTAClick = () => {
     window.open(RESUME_LINK, '_blank');
   };
@@ -19,6 +21,7 @@ const Drawer = ({ isOpen, toggleDrawer }: DrawerProps) => {
       animate={{ x: isOpen ? 0 : '100%' }}
       exit={{ x: '100%' }}
       transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+      ref={ref}
     >
       <div className="flex justify-between items-center">
         <div className="h-[100px] w-full flex flex-row items-center justify-end">

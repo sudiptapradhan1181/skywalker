@@ -4,10 +4,30 @@ import FirstFold from '@/components/FirstFold';
 import FixedInfo from '@/components/FixedInfo';
 import Header from '@/components/Header';
 import { SOCIAL_ICONS } from '@/constants';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function Home() {
   const [isMwebMenuOpen, setIsMwebMenuOpen] = useState<boolean>(false);
+  const drawerRef = useRef<HTMLDivElement>(null);
+
+  const handleClickOutside = (e: MouseEvent) => {
+    if (drawerRef.current && !drawerRef.current.contains(e.target as Node)) {
+      setIsMwebMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    if (isMwebMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      // Cleanup the event listener on unmount
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMwebMenuOpen]);
   const handleToggleMenu = () => {
     setIsMwebMenuOpen((prev) => !prev);
   };
@@ -21,7 +41,11 @@ export default function Home() {
       <div className="hidden md:block fixed rotate-90 bottom-[130px] md:right-[-100px] lg:right-0">
         <FixedInfo />
       </div>
-      <Drawer isOpen={isMwebMenuOpen} toggleDrawer={handleToggleMenu} />
+      <Drawer
+        isOpen={isMwebMenuOpen}
+        toggleDrawer={handleToggleMenu}
+        ref={drawerRef}
+      />
     </div>
   );
 }
