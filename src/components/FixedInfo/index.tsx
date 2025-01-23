@@ -27,7 +27,7 @@ export default function FixedInfo({ icons = [] }: FixedInfoProps) {
     hidden: {},
     visible: {
       transition: {
-        delayChildren: 1.8, // Start this animation after 1s
+        delayChildren: 1.3,
       },
     },
   };

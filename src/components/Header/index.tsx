@@ -21,7 +21,7 @@ export default function Header() {
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.5,
+        duration: 1,
         ease: 'easeOut',
       },
     },
@@ -56,7 +56,7 @@ export default function Header() {
         <BrandLogo />
       </motion.div>
       <motion.nav
-        className="flex flex-row items-center space-x-6"
+        className="hidden md:flex flex-row items-center space-x-6"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
@@ -78,6 +78,13 @@ export default function Header() {
             <PrimaryCTA onClick={handleCTAClick} />
           </motion.div>
         </nav>
+      </motion.nav>
+      <motion.nav className="md:hidden" variants={logoVariants}>
+        <img
+          src="/icons/hammenu.svg"
+          alt="Hamburger Menu"
+          className="cursor-pointer w-[39px] h-[45px]"
+        />
       </motion.nav>
     </motion.header>
   );
