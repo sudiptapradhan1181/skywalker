@@ -2,14 +2,18 @@
 import { motion } from 'framer-motion';
 import { AnimatedLink } from '@/components/AnimatedLink';
 
-export default function FirstFold() {
+type FirstFoldProps = {
+  isDesktop: boolean;
+};
+
+export default function FirstFold({ isDesktop }: FirstFoldProps) {
   // Variants for container (staggering children)
   const containerVariants = {
     hidden: {},
     visible: {
       transition: {
         staggerChildren: 0.1, // Delay between each child animation
-        delayChildren: 1, // Start this animation after 1s
+        delayChildren: isDesktop ? 1 : 0.5, // Start this animation after 1s
       },
     },
   };
@@ -31,32 +35,32 @@ export default function FirstFold() {
   };
   return (
     <motion.section
-      className="h-screen w-screen px-[200px] flex flex-col justify-center"
+      className="h-screen w-screen px-[24px] md:px-[140px] lg:px-[200px] flex flex-col justify-center"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
     >
       <motion.span
-        className="text-primary text-[16px] mx-2 my-4"
+        className="text-primary text-[16px] mx-2 my-2 md:my-4"
         variants={itemVariants}
       >
         Hi, my name is
       </motion.span>
       <div className="font-[family-name:var(--font-inter)] flex flex-col">
         <motion.h1
-          className="text-boldtext text-[70px] leading-[80px] font-bold"
+          className="text-boldtext text-[40px] leading-[68px] md:text-[48px] md:leading-[50px] lg:text-[64px] lg:leading-[80px] font-bold"
           variants={itemVariants}
         >
           Sudipta Pradhan.
         </motion.h1>
         <motion.h2
-          className="text-medium text-[70px] leading-[72px] font-bold"
+          className="text-medium text-[40px] leading-[36px] md:text-[48px] md:leading-[44px] lg:text-[64px] lg:leading-[72px] font-bold"
           variants={itemVariants}
         >
           I build things for the web.
         </motion.h2>
         <motion.p
-          className="text-medium text-[16px] max-w-[740px] mt-5"
+          className="text-medium text-[16px] max-w-[540px] md:max-w-[740px] mt-5"
           variants={itemVariants}
         >
           I’m a software developer passionate about creating intuitive and
