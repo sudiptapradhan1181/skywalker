@@ -21,7 +21,7 @@ export default function Header() {
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.5,
+        duration: 1,
         ease: 'easeOut',
       },
     },

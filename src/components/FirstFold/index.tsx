@@ -2,18 +2,14 @@
 import { motion } from 'framer-motion';
 import { AnimatedLink } from '@/components/AnimatedLink';
 
-type FirstFoldProps = {
-  isDesktop: boolean;
-};
-
-export default function FirstFold({ isDesktop }: FirstFoldProps) {
+export default function FirstFold() {
   // Variants for container (staggering children)
   const containerVariants = {
     hidden: {},
     visible: {
       transition: {
         staggerChildren: 0.1, // Delay between each child animation
-        delayChildren: isDesktop ? 1 : 0.5, // Start this animation after 1s
+        delayChildren: 0.75, // Start this animation after 1s
       },
     },
   };
