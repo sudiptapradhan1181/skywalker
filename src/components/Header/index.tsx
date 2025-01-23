@@ -3,8 +3,13 @@ import { motion } from 'framer-motion';
 import { HEADER_TABS, RESUME_LINK } from '@/constants';
 import BrandLogo from '../BrandLogo';
 import PrimaryCTA from '../PrimaryCTA';
+import { Dispatch, SetStateAction } from 'react';
 
-export default function Header() {
+type HeaderProps = {
+  setIsMwebMenuOpen: Dispatch<SetStateAction<boolean>>;
+};
+
+export default function Header({ setIsMwebMenuOpen }: HeaderProps) {
   const containerVariants = {
     hidden: {},
     visible: {
@@ -45,9 +50,14 @@ export default function Header() {
   const handleCTAClick = () => {
     window.open(RESUME_LINK, '_blank');
   };
+
+  const handleToggleMenu = () => {
+    setIsMwebMenuOpen((prev) => !prev);
+  };
+
   return (
     <motion.header
-      className="absolute top-0 left-0 flex flex-row w-full h-[100px] items-center justify-between px-[50px]"
+      className="absolute top-0 left-0 flex flex-row w-full h-[100px] items-center justify-between px-[24px] md:px-[50px]"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -84,6 +94,7 @@ export default function Header() {
           src="/icons/hammenu.svg"
           alt="Hamburger Menu"
           className="cursor-pointer w-[39px] h-[45px]"
+          onClick={handleToggleMenu}
         />
       </motion.nav>
     </motion.header>
