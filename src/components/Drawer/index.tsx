@@ -37,11 +37,11 @@ const Drawer = ({ isOpen, toggleDrawer, ref }: DrawerProps) => {
         {HEADER_TABS.map((header, idx) => {
           return (
             <li
-              key={header}
+              key={header.title}
               className="text-[18px] cursor-pointer flex flex-col items-center space-y-2"
             >
               <span className="text-primary">0{idx + 1}. </span>
-              <a className="text-boldtext">{header}</a>
+              <a className="text-boldtext">{header.title}</a>
             </li>
           );
         })}
