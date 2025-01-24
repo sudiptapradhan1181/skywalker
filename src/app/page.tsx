@@ -1,4 +1,5 @@
 'use client';
+import AboutSection from '@/components/AboutSection';
 import Drawer from '@/components/Drawer';
 import FirstFold from '@/components/FirstFold';
 import FixedInfo from '@/components/FixedInfo';
@@ -24,7 +25,6 @@ export default function Home() {
     }
 
     return () => {
-      // Cleanup the event listener on unmount
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [isMwebMenuOpen]);
@@ -35,6 +35,7 @@ export default function Home() {
     <div className="relative font-[family-name:var(--font-fira-code)]">
       <Header setIsMwebMenuOpen={setIsMwebMenuOpen} />
       <FirstFold />
+      <AboutSection />
       <div className="hidden md:block fixed rotate-90 bottom-[130px] md:left-[-100px] lg:left-0">
         <FixedInfo icons={SOCIAL_ICONS} />
       </div>

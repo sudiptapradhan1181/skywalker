@@ -74,14 +74,15 @@ export default function Header({ setIsMwebMenuOpen }: HeaderProps) {
         <nav className="flex flex-row items-center space-x-6">
           {HEADER_TABS.map((header, idx) => {
             return (
-              <motion.div
-                key={header}
-                className="text-[13px] cursor-pointer"
+              <motion.a
+                key={header.title}
+                className="text-[13px] cursor-pointer flex flex-row items-center space-x-2"
                 variants={itemVariants}
+                href={header.href}
               >
                 <span className="text-primary">0{idx + 1}. </span>
-                <a className="text-boldtext">{header}</a>
-              </motion.div>
+                <div className="text-boldtext">{header.title}</div>
+              </motion.a>
             );
           })}
           <motion.div variants={itemVariants}>
