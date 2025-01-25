@@ -9,14 +9,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
-        primary: 'var(--primary)',
-        secondary: 'var(--secondary)',
-        medium: 'var(--medium)',
-        boldtext: 'var(--bold-text)',
-        primarybg: 'var(--primary-bg)',
-        secondarybg: 'var(--secondary-bg)',
+        background: '#0b192e',
+        foreground: '#ededed',
+        primary: '#64ffda',
+        secondary: '#a8b2d1',
+        medium: '#8892b0',
+        boldtext: '#ccd6f6',
+        primarybg: '#0b192e',
+        secondarybg: '#112240',
       },
       screens: {
         xs: '480px', // Extra small devices

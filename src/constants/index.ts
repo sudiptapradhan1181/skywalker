@@ -30,3 +30,10 @@ export const HEADER_TABS = [
 
 export const RESUME_LINK =
   'https://drive.google.com/file/d/1cTf4OmDI29KHR7SMsM8gjGhTnYJWeJJK/view?usp=sharing';
+
+export const SKILLS_LIST = [
+  'Javascript(ES6+)',
+  'React',
+  'Typescript',
+  'NextJS',
+];
