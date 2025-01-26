@@ -37,3 +37,58 @@ export const SKILLS_LIST = [
   'Typescript',
   'NextJS',
 ];
+
+export const EXPERIENCE_TABS = [
+  {
+    id: 1,
+    label: 'Saathi',
+    title: 'Lead Frontend Engineer',
+    date: 'May 2024 - Present',
+    details: [
+      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
+      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
+      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
+    ],
+  },
+  {
+    id: 2,
+    label: 'Whitehat Jr',
+    title: 'Senior Engineer',
+    date: 'Sept 2023 - April 2024',
+    details: [
+      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
+      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
+    ],
+  },
+  {
+    id: 3,
+    label: "Byju's",
+    title: 'Software Engineer',
+    date: 'June 2023 - Aug 2023',
+    details: [
+      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
+      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
+      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
+      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
+    ],
+  },
+  {
+    id: 4,
+    label: 'Toppr',
+    title: 'Software Engineer',
+    date: 'May 2021 - June 2023',
+    details: [
+      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
+    ],
+  },
+  {
+    id: 5,
+    label: 'Newzera',
+    title: 'Software Engineer Intern',
+    date: 'May 2020 - Aug 2020',
+    details: [
+      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
+      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
+    ],
+  },
+];
