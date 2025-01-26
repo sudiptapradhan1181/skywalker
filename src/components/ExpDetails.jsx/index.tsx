@@ -18,10 +18,10 @@ export default function ExpDetails({
           <span className="text-boldtext">{title}</span>
           <span className="text-primary">@ {company}</span>
         </div>
-        <span className="text-medium te-[11px] md:text-[13px] mt-2">
+        <span className="text-medium text-[11px] md:text-[13px] mt-2">
           {date}
         </span>
-        <ul className="font-[family-name:var(--font-inter)] mt-4 space-y-4">
+        <ul className="font-[family-name:var(--font-inter)] mt-4 space-y-4 text-[16px]">
           {details.map((detail, index) => {
             return (
               <li key={index} className="flex flex-row gap-2">
