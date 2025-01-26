@@ -1,6 +1,7 @@
 'use client';
 import AboutSection from '@/components/AboutSection';
 import Drawer from '@/components/Drawer';
+import ExperienceSection from '@/components/ExperienceSection';
 import FirstFold from '@/components/FirstFold';
 import FixedInfo from '@/components/FixedInfo';
 import Header from '@/components/Header';
@@ -36,6 +37,7 @@ export default function Home() {
       <Header setIsMwebMenuOpen={setIsMwebMenuOpen} />
       <FirstFold />
       <AboutSection />
+      <ExperienceSection />
       <div className="hidden md:block fixed rotate-90 bottom-[130px] md:left-[-100px] lg:left-0">
         <FixedInfo icons={SOCIAL_ICONS} />
       </div>
