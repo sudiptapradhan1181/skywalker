@@ -39,9 +39,12 @@ const Drawer = ({ isOpen, toggleDrawer, ref }: DrawerProps) => {
             <li
               key={header.title}
               className="text-[18px] cursor-pointer flex flex-col items-center space-y-2"
+              onClick={toggleDrawer}
             >
               <span className="text-primary">0{idx + 1}. </span>
-              <a className="text-boldtext">{header.title}</a>
+              <a href={header.href} className="text-boldtext">
+                {header.title}
+              </a>
             </li>
           );
         })}

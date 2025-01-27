@@ -5,6 +5,7 @@ import ExperienceSection from '@/components/ExperienceSection';
 import FirstFold from '@/components/FirstFold';
 import FixedInfo from '@/components/FixedInfo';
 import Header from '@/components/Header';
+import ProjectsSection from '@/components/ProjectsSection';
 import { SOCIAL_ICONS } from '@/constants';
 import { useEffect, useRef, useState } from 'react';
 
@@ -38,6 +39,7 @@ export default function Home() {
       <FirstFold />
       <AboutSection />
       <ExperienceSection />
+      <ProjectsSection />
       <div className="hidden md:block fixed rotate-90 bottom-[130px] md:left-[-100px] lg:left-0">
         <FixedInfo icons={SOCIAL_ICONS} />
       </div>
