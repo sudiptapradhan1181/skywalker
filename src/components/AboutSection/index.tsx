@@ -10,10 +10,10 @@ export default function AboutSection() {
     >
       <div className="flex flex-col justify-center">
         <h2 className="flex flex-row items-center gap-4">
-          <span className="text-primary text-[22px] md:text-[26px] font-normal">
+          <span className="text-primary text-[18px] md:text-[26px] font-normal">
             01.
           </span>
-          <span className="font-[family-name:var(--font-inter)] text-boldtext text-[26px] md:text-[32px] font-semibold whitespace-nowrap">
+          <span className="font-[family-name:var(--font-inter)] text-boldtext text-[22px] md:text-[32px] font-semibold whitespace-nowrap">
             About Me
           </span>
           <div className="h-[0.5px] bg-medium w-full md:w-[200px] lg:w-[250px] xl:w-[300px]" />
