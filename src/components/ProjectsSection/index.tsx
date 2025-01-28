@@ -1,32 +1,7 @@
+import { PROJECT_DETAILS } from '@/constants';
 import ProjectDetails from '../ProjectDetails';
 
 export default function ProjectsSection() {
-  const projects = [
-    {
-      id: 1,
-      title: 'Saathi Landing Page',
-      desc: 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.',
-      imgSrc: '/images/saathi.webp',
-      href: 'https://www.saathi.in/',
-      tags: ['NextJS', 'Tailwind', 'Tanstack-Query', 'NodeJS'],
-    },
-    {
-      id: 2,
-      title: 'Math Companion',
-      desc: 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.',
-      imgSrc: '/images/bmc.webp',
-      href: 'https://byjus.com/us/math/',
-      tags: ['NextJS', 'Tailwind', 'Tanstack-Query', 'NodeJS'],
-    },
-    {
-      id: 3,
-      title: 'Math Companion',
-      desc: 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.',
-      imgSrc: '/images/bmc.webp',
-      href: 'https://byjus.com/us/math/',
-      tags: ['NextJS', 'Tailwind', 'Tanstack-Query', 'NodeJS'],
-    },
-  ];
   return (
     <section
       id="projects"
@@ -42,7 +17,7 @@ export default function ProjectsSection() {
         <div className="h-[0.5px] bg-medium w-full" />
       </h2>
       <div className="w-full flex flex-col relative">
-        {projects?.map((project, idx) => {
+        {PROJECT_DETAILS?.map((project, idx) => {
           return (
             <ProjectDetails
               key={project.id}
