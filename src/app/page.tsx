@@ -1,5 +1,6 @@
 'use client';
 import AboutSection from '@/components/AboutSection';
+import ContactUs from '@/components/ContactUs';
 import Drawer from '@/components/Drawer';
 import ExperienceSection from '@/components/ExperienceSection';
 import FirstFold from '@/components/FirstFold';
@@ -40,6 +41,7 @@ export default function Home() {
       <AboutSection />
       <ExperienceSection />
       <ProjectsSection />
+      <ContactUs />
       <div className="hidden md:block fixed rotate-90 bottom-[130px] md:left-[-100px] lg:left-0">
         <FixedInfo icons={SOCIAL_ICONS} />
       </div>

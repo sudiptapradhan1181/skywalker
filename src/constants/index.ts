@@ -92,3 +92,30 @@ export const EXPERIENCE_TABS = [
     ],
   },
 ];
+
+export const PROJECT_DETAILS = [
+  {
+    id: 1,
+    title: 'Saathi Landing Page',
+    desc: 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.',
+    imgSrc: '/images/saathi.webp',
+    href: 'https://www.saathi.in/',
+    tags: ['NextJS', 'Tailwind', 'Tanstack-Query', 'NodeJS'],
+  },
+  {
+    id: 2,
+    title: 'Math Companion',
+    desc: 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.',
+    imgSrc: '/images/bmc.webp',
+    href: 'https://byjus.com/us/math/',
+    tags: ['NextJS', 'Tailwind', 'Tanstack-Query', 'NodeJS'],
+  },
+  {
+    id: 3,
+    title: 'Math Companion',
+    desc: 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.',
+    imgSrc: '/images/bmc.webp',
+    href: 'https://byjus.com/us/math/',
+    tags: ['NextJS', 'Tailwind', 'Tanstack-Query', 'NodeJS'],
+  },
+];
