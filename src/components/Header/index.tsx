@@ -86,7 +86,11 @@ export default function Header({ setIsMwebMenuOpen }: HeaderProps) {
       transition={{ duration: 0.4, ease: 'easeInOut' }}
     >
       <motion.div variants={logoVariants}>
-        <BrandLogo />
+        <BrandLogo
+          handleClick={() => {
+            window.open('/', '_self');
+          }}
+        />
       </motion.div>
       <motion.nav
         className="hidden md:flex flex-row items-center space-x-6"

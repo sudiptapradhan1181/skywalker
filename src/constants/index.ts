@@ -45,9 +45,8 @@ export const EXPERIENCE_TABS = [
     title: 'Lead Frontend Engineer',
     date: 'May 2024 - Present',
     details: [
-      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
-      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
-      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
+      'Spearheaded the development a high-impact website to boost product reach, enabling users to explore benefits and complete UPI purchases seamlessly without downloading the app, implementing intent and collect flows for streamlined transactions',
+      'Led the development of an internal dashboard tool, providing real-time insights into app usage, order details, and customer information while enabling seamless content uploads to the mobile app for enhanced operational efficiency',
     ],
   },
   {
@@ -56,8 +55,8 @@ export const EXPERIENCE_TABS = [
     title: 'Senior Engineer',
     date: 'Sept 2023 - April 2024',
     details: [
-      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
-      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
+      'Leading WHJR system customization, integrating strategically with Tynker app to drive annual revenue growth, targeting gains over $4M.',
+      'Led a team in creating innovative product with Next.js and React, boosting user retention from 35% to over 60%.',
     ],
   },
   {
@@ -66,7 +65,7 @@ export const EXPERIENCE_TABS = [
     title: 'Software Engineer',
     date: 'June 2023 - Aug 2023',
     details: [
-      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
+      'Crafted Next.js blog pages, aimed at tripling user landings during FIFA World Cup 2022, enhancing engagement and brand visibility.',
       'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
       'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
       'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
