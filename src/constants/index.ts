@@ -45,8 +45,8 @@ export const EXPERIENCE_TABS = [
     title: 'Lead Frontend Engineer',
     date: 'May 2024 - Present',
     details: [
-      'Spearheaded the development a high-impact website to boost product reach, enabling users to explore benefits and complete UPI purchases seamlessly without downloading the app, implementing intent and collect flows for streamlined transactions',
-      'Led the development of an internal dashboard tool, providing real-time insights into app usage, order details, and customer information while enabling seamless content uploads to the mobile app for enhanced operational efficiency',
+      'Spearheaded the development a high-impact website to boost product reach, enabling users to explore benefits and complete UPI purchases seamlessly without downloading the app, implementing intent and collect flows for streamlined transactions.',
+      'Led the development of an internal dashboard tool, providing real-time insights into app usage, order details, and customer information while enabling seamless content uploads to the mobile app for enhanced operational efficiency.',
     ],
   },
   {
@@ -56,7 +56,7 @@ export const EXPERIENCE_TABS = [
     date: 'Sept 2023 - April 2024',
     details: [
       'Leading WHJR system customization, integrating strategically with Tynker app to drive annual revenue growth, targeting gains over $4M.',
-      'Led a team in creating innovative product with Next.js and React, boosting user retention from 35% to over 60%.',
+      "Significantly contributed to successful launch of Spark AR and English courses, using ReactJS, aiding WHJR's global expansion to diverse regions.",
     ],
   },
   {
@@ -66,9 +66,8 @@ export const EXPERIENCE_TABS = [
     date: 'June 2023 - Aug 2023',
     details: [
       'Crafted Next.js blog pages, aimed at tripling user landings during FIFA World Cup 2022, enhancing engagement and brand visibility.',
-      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
-      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
-      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
+      'Led a team in creating innovative product with Next.js and React, boosting user retention from 35% to over 60%.',
+      'Contributed to the development of an npm package facilitating text and image search via camera or upload, seamlessly integrated into platforms like Byju’s, Aakash, and Toppr.',
     ],
   },
   {
@@ -77,7 +76,8 @@ export const EXPERIENCE_TABS = [
     title: 'Software Engineer',
     date: 'May 2021 - June 2023',
     details: [
-      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
+      'Instrumental in conceiving and executing a platform for student-teacher connectivity, integrating Agora Web SDK with ReactJS, enhancing educational interactions and engagement.',
+      'Crafted sophisticated course landing pages with Webflow, mitigating content management challenges and empowering autonomous page updates, resulting in a 50% increase in operational efficiency.',
     ],
   },
   {
@@ -86,8 +86,7 @@ export const EXPERIENCE_TABS = [
     title: 'Software Engineer Intern',
     date: 'May 2020 - Aug 2020',
     details: [
-      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
-      'Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements',
+      "Played a pivotal role in developing the company's core mobile application, architecting a secure authentication system and designing a dynamic feed section to elevate user engagement and experience.",
     ],
   },
 ];
