@@ -21,10 +21,10 @@ export default function AboutSection() {
         <div className="w-full flex flex-col items-center md:items-start gap-4 md:gap-0 md:flex-row md:justify-between">
           <div className="w-full md:max-w-[50%] flex flex-col font-[family-name:var(--font-inter)] text-medium text-[14px] md:text-[16px]">
             <p className="mt-5">
-              Hi, I’m Sudipta Pradhan, a Senior Software Developer specializing
-              in frontend development with 4 years of experience building
-              user-centric digital experiences. I’ve had the privilege of
-              working with companies like{' '}
+              Hello, I’m a Senior Software Developer specializing in frontend
+              development with 4 years of experience building user-centric
+              digital experiences. I’ve had the privilege of working with
+              companies like{' '}
               <AnimatedLink
                 text={'Newzera'}
                 href={'https://in.linkedin.com/company/newzera'}
