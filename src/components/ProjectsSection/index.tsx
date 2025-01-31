@@ -5,7 +5,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="h-auto xs:h-screen px-[24px] md:px-[10vw] lg:px-[16vw] flex flex-col justify-center items-center mt-10 xs:mt-0"
+      className="w-screen px-[24px] md:px-[10vw] lg:px-[16vw] flex flex-col justify-center items-center mt-10 xs:mt-0"
     >
       <h2 className="flex flex-row w-full items-center gap-4 mb-10">
         <span className="text-primary text-[18px] md:text-[26px] font-normal">
