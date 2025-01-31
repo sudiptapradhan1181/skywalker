@@ -3,49 +3,71 @@ import { motion } from 'framer-motion';
 import { HEADER_TABS, RESUME_LINK } from '@/constants';
 import BrandLogo from '../BrandLogo';
 import PrimaryCTA from '../PrimaryCTA';
-import { Dispatch, SetStateAction } from 'react';
+import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 
 type HeaderProps = {
   setIsMwebMenuOpen: Dispatch<SetStateAction<boolean>>;
 };
 
+const containerVariants = {
+  hidden: { opacity: 0, y: -50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      staggerChildren: 0.1,
+      duration: 0.6,
+      ease: 'easeOut',
+    },
+  },
+};
+
+const logoVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+      ease: 'easeOut',
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: {
+    opacity: 0,
+    y: -50,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.2,
+      ease: 'easeOut',
+    },
+  },
+};
+
 export default function Header({ setIsMwebMenuOpen }: HeaderProps) {
-  const containerVariants = {
-    hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
-  const logoVariants = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 1,
-        ease: 'easeOut',
-      },
-    },
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+      setLastScrollY(currentScrollY);
+    };
 
-  const itemVariants = {
-    hidden: {
-      opacity: 0,
-      y: -50,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.2,
-        ease: 'easeOut',
-      },
-    },
-  };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
 
   const handleCTAClick = () => {
     window.open(RESUME_LINK, '_blank');
@@ -57,18 +79,24 @@ export default function Header({ setIsMwebMenuOpen }: HeaderProps) {
 
   return (
     <motion.header
-      className="absolute top-0 left-0 flex flex-row w-full h-[100px] items-center justify-between px-[24px] md:px-[50px]"
+      className="fixed top-0 left-0 flex flex-row w-full h-[80px] items-center justify-between px-[24px] md:px-[50px] bg-primarybg/80 z-50 backdrop-blur-lg"
       variants={containerVariants}
       initial="hidden"
-      animate="visible"
+      animate={isVisible ? 'visible' : { y: '-100%' }}
+      transition={{ duration: 0.4, ease: 'easeInOut' }}
     >
       <motion.div variants={logoVariants}>
-        <BrandLogo />
+        <BrandLogo
+          handleClick={() => {
+            window.open('/', '_self');
+          }}
+        />
       </motion.div>
       <motion.nav
         className="hidden md:flex flex-row items-center space-x-6"
         initial="hidden"
-        animate="visible"
+        animate={isVisible ? 'visible' : { y: '-100%' }}
+        transition={{ duration: 0.4, ease: 'easeInOut' }}
         variants={containerVariants}
       >
         <nav className="flex flex-row items-center space-x-6">
