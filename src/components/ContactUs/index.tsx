@@ -13,7 +13,7 @@ export default function ContactUs() {
     >
       <div className="flex flex-col max-w-[75%] items-center gap-4 mb-10">
         <span className="text-primary text-[14px] md:text-[18px] font-normal">
-          03. What&apos;s Next?
+          04. What&apos;s Next?
         </span>
         <span className="font-[family-name:var(--font-inter)] text-boldtext text-[32px] md:text-[56px] font-semibold whitespace-nowrap">
           Get In Touch
