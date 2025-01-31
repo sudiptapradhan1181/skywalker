@@ -36,6 +36,8 @@ export const SKILLS_LIST = [
   'React',
   'Typescript',
   'NextJS',
+  'Tanstack Query',
+  'Framer Motion',
 ];
 
 export const EXPERIENCE_TABS = [
