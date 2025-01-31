@@ -8,7 +8,7 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="h-screen w-screen px-[24px] md:px-[10vw] lg:px-[16vw] flex flex-col pt-[20%] items-center"
+      className="h-auto xs:h-screen w-screen px-[24px] md:px-[10vw] lg:px-[16vw] flex flex-col pt-[20%] items-center mt-10 xs:mt-0"
     >
       <h2 className="flex flex-row w-full items-center gap-4">
         <span className="text-primary text-[18px] md:text-[26px] font-normal">

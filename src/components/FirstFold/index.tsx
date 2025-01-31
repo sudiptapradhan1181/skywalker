@@ -31,7 +31,7 @@ export default function FirstFold() {
   };
   return (
     <motion.section
-      className="h-screen w-screen px-[24px] md:px-[140px] lg:px-[200px] flex flex-col justify-center"
+      className="h-auto xs:h-screen w-screen px-[24px] md:px-[140px] lg:px-[200px] flex flex-col justify-center  mt-[150px] xs:mt-[0]"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
@@ -63,7 +63,7 @@ export default function FirstFold() {
           visually engaging digital experiences. Currently, I’m contributing my
           skills at{' '}
           <AnimatedLink text={'Saathi'} href={'https://www.saathi.in/'} />, a
-          profit-with-purpose startup dedicated to empowering grey- and
+          profit-with-purpose startup dedicated to empowering grey and
           blue-collar workforces through impactful training programs and
           meaningful job opportunities. I’m driven by the mission to build
           accessible and user-centered solutions that make a real difference in
