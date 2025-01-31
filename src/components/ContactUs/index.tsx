@@ -9,7 +9,7 @@ export default function ContactUs() {
   return (
     <section
       id="contact"
-      className="w-screen h-screen px-[24px] md:px-[10vw] lg:px-[16vw] flex flex-col justify-center items-center"
+      className="h-auto xs:h-screen w-screen px-[24px] md:px-[10vw] lg:px-[16vw] flex flex-col justify-center items-center mt-10 xs:mt-0"
     >
       <div className="flex flex-col max-w-[75%] items-center gap-4 mb-10">
         <span className="text-primary text-[14px] md:text-[18px] font-normal">
