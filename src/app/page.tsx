@@ -35,7 +35,7 @@ export default function Home() {
     setIsMwebMenuOpen((prev) => !prev);
   };
   return (
-    <div className="relative font-[family-name:var(--font-fira-code)]">
+    <div className="relative font-[family-name:var(--font-fira-code)] bg-primarybg">
       <Header setIsMwebMenuOpen={setIsMwebMenuOpen} />
       <FirstFold />
       <AboutSection />
