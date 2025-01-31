@@ -17,6 +17,14 @@ export const metadata: Metadata = {
     title: 'Sudipta Pradhan',
     description:
       'Sudipta Pradhan is a software engineer specializing in frontend development with 4 years of experience building user-centric digital experiences.',
+    images: [
+      {
+        url: '/images/og-image.png',
+        width: 1200,
+        height: 627,
+        alt: 'Sudipta Pradhan',
+      },
+    ],
   },
   title: 'Sudipta Pradhan',
   description:
