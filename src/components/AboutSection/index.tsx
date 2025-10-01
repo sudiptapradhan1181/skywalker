@@ -1,14 +1,44 @@
 import { SKILLS_LIST } from '@/constants';
 import AnimatedPhoto from '../AnimatedPhoto';
 import { AnimatedLink } from '../AnimatedLink';
+import { motion } from 'framer-motion';
 
 export default function AboutSection() {
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        delayChildren: 1.25,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: {
+      opacity: 0,
+      y: 20,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.2,
+        ease: 'easeOut',
+      },
+    },
+  };
   return (
-    <section
+    <motion.section
       id="about"
-      className="h-screen w-screen px-[24px] md:px-[10vw] lg:px-[16vw] flex flex-col justify-center items-center"
+      className="h-auto xs:h-screen w-screen px-[24px] md:px-[10vw] lg:px-[16vw] flex flex-col justify-center items-center mt-10 xs:mt-0"
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
     >
-      <div className="flex flex-col justify-center">
+      <motion.div
+        className="flex flex-col justify-center"
+        variants={itemVariants}
+      >
         <h2 className="flex flex-row items-center gap-4">
           <span className="text-primary text-[18px] md:text-[26px] font-normal">
             01.
@@ -80,7 +110,7 @@ export default function AboutSection() {
             <AnimatedPhoto />
           </div>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
