@@ -29,7 +29,7 @@ export const HEADER_TABS = [
 ];
 
 export const RESUME_LINK =
-  'https://drive.google.com/file/d/1cTf4OmDI29KHR7SMsM8gjGhTnYJWeJJK/view?usp=sharing';
+  'https://drive.google.com/file/d/1r-FpU_rG9ztvezhbJ2xa_nEzlZ7lzww0/view?usp=sharing';
 
 export const SKILLS_LIST = [
   'Javascript(ES6+)',
@@ -47,6 +47,8 @@ export const EXPERIENCE_TABS = [
     title: 'Lead Frontend Engineer',
     date: 'May 2024 - Present',
     details: [
+      'Piloted the end-to-end development of an employer-focused platform for onboarding, business verification, job posting, and application tracking. Achieved 4000+ onboarded employers with 1000+ recruiters hiring through the system',
+      'Optimized the home website by implementing lazy loading, image optimization, and CDN-backed asset delivery from S3, reducing initial load time and improving Core Web Vitals (LCP/FCP) from 67 to 90, resulting in a smoother user experience.',
       'Spearheaded the development a high-impact website to boost product reach, enabling users to explore benefits and complete UPI purchases seamlessly without downloading the app, implementing intent and collect flows for streamlined transactions.',
       'Led the development of an internal dashboard tool, providing real-time insights into app usage, order details, and customer information while enabling seamless content uploads to the mobile app for enhanced operational efficiency.',
     ],
